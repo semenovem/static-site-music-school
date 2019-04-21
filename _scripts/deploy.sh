@@ -41,10 +41,7 @@ find * -not -path "_dist/*" -not -path "_site/*" -not -path "node_modules/*" -de
 ### перенести  файлы из _dist в корень проекта ./
 mv -f ./_dist/* ./
 
-
-exit 0
-
-#git add .
-#git commit -m ${COMMIT}
-#git push
-#git checkout -
+git add .
+git commit -m ${COMMIT}
+git push
+git checkout -
