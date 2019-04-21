@@ -1,0 +1,44 @@
+{
+  "_order": [
+    "HOME", "BIO", "MUSIC", "VIDEOS", "PHOTOS", "NEWS", "CONTACT"
+  ],
+
+  "MAIN": {
+    "title": "Главная",
+    "anchorHtml": "main"
+  },
+  "CONTACT": {
+    "title": "Контакты",
+    "anchorHtml": "contact"
+  },
+  "TEACHERS": {
+    "title": "Преподаватели",
+    "anchorHtml": "teachers"
+  },
+
+
+  "HOME": {
+    "title": "Home",
+    "anchorHtml": "home"
+  },
+  "BIO": {
+    "title": "BIO",
+    "anchorHtml": "bio"
+  },
+  "MUSIC": {
+    "title": "Music",
+    "anchorHtml": "music"
+  },
+  "VIDEOS": {
+    "title": "Videos",
+    "anchorHtml": "videos"
+  },
+  "PHOTOS": {
+    "title": "Photos",
+    "anchorHtml": "photos"
+  },
+  "NEWS": {
+    "title": "News",
+    "anchorHtml": "news"
+  }
+}

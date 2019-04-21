@@ -1,0 +1,23 @@
+{% include header/item/c.css %}
+
+.header {
+  height: 80px;
+  background-color: #5bc6bb;
+}
+
+.header-wrap {
+  max-width: var(--max-width-limit);
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+
+
+}
