@@ -5,13 +5,18 @@
 -->{% endcomment %}
 
 <footer class="{{ include.css }}">
-  <span class="typography-footer">Артём Авадьяев</span>
+  <span class="typography-footer">Музыкальная Школа Артиссимо</span>
 
 
 
   <div class="footer-icons-social">
-    <img src="{{ 'icons/social/footer_facebook.png' | makeUrl }}" class="footer-icon-social">
-    <img src="{{ 'icons/social/footer_instagram.png' | makeUrl }}" class="footer-icon-social">
+    <a href="{{ site.social.itunes.url }}" class="mod-face-promo-icon-buy" target="_blank" rel="noopener">
+      <img src="{{ 'icons/social/footer_facebook.png' | makeUrl }}" class="footer-icon-social">
+    </a>
+
+    <a href="{{ track.shops.itunes.url }}" class="mod-face-promo-icon-buy" target="_blank" rel="noopener">
+      <img src="{{ 'icons/social/footer_instagram.png' | makeUrl }}" class="footer-icon-social">
+    </a>
   </div>
 
 

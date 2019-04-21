@@ -7,11 +7,14 @@ contacts:
   website: artissimo-school.ru
   phone: +7(985)247-76-40
   email:
-  address: Москва Борисоглебский Переулок 12
+  address: Москва, Борисоглебский Переулок 12
   social:
     instagram:
-      url: https://www.instagram.com/artem_avadyaev
+      url: https://www.instagram.com/artissimo_music_school/
       alt: Мой instagram
+    vk:
+      url: https://vk.com/id540304848
+      alt: Вконтакте
 #    youtube:
 #      url:
 #      alt: Мой канал на youtube
