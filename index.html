@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head><title>Idelia Mars</title><meta name="description" content="official site Mars Idelia"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="robots" content="noindex,nofollow"><script>/**
+ *
+ */
+const app = {
+  screen: 'xs',
+  screenHash: {
+    xs: { id: 'xs', max: 576, },
+    sm: { id: 'sm', max: 786, },
+    md: { id: 'md', max: 992, },
+    lg: { id: 'lg', max: 1200, },
+    xl: { id: 'xl', min: 1200, },
+  },
+  screenList: ['xs', 'sm', 'md', 'lg', 'xl'],
+
+  domContentLoaded: new Promise(resolve => {
+    document.addEventListener('DOMContentLoaded', () => {
+      app._updDeviceSize();
+      // todo debounce for resize
+      window.addEventListener('resize', app._onResize.bind(app));
+      resolve();
+    });
+  }),
+
+  loaded: new Promise(resolve => {
+    window.addEventListener('load', resolve);
+  }),
+
+  _listeners: {},
+
+  getDeviceSize() {},
+
+  /**
+   * Подписка на события
+   * @param eventName changeScreen |
+   * @param func
+   */
+  addEventListener(eventName, func) {
+    if (!this._listeners[eventName]) {
+      this._listeners[eventName] = [];
+    }
+    this._listeners[eventName].push(func);
+  },
+
+  /**
+   *
+   * @param param Object | Function
+   */
+  execute(param) {
+    if (typeof param === 'function') {
+      param();
+      return;
+    }
+
+    param.init()
+  },
+
+  _fireEvent(e, ...args) {
+    const li = this._listeners[e];
+    if (li) {
+      li.forEach(func => func(...args));
+    }
+  },
+
+  _updDeviceSize() {
+    const prevScreen = this.screen;
+    this.screen = this._defDeviceSize(document.body.clientWidth);
+    if (prevScreen === this.screen) {
+      return;
+    }
+    this._fireEvent('changeScreen', { screen: this.screen, prevScreen });
+  },
+
+  _defDeviceSize(w) {
+    const scr = this.screenHash;
+
+    if (w < scr.xs.max) { return scr.xs.id; }
+    if (w < scr.sm.max) { return scr.sm.id; }
+    if (w < scr.md.max) { return scr.md.id; }
+    if (w < scr.lg.max) { return scr.lg.id; }
+    return scr.xl.id;
+  },
+
+  _onResize: (() => {
+    let timer;
+
+    return function _onResize() {
+      if (timer) {
+        clearTimeout(timer);
+      }
+
+      timer = setTimeout(() => this._updDeviceSize(), 50);
+    }
+  })()
+};</script><link rel="stylesheet" type="text/css" href="css/vars.css?a=6d94f3"><link rel="stylesheet" type="text/css" href="css/fonts.css?a=6d94f3"><link rel="stylesheet" type="text/css" href="css/typography.css?a=6d94f3"><link rel="stylesheet" type="text/css" href="css/anims.css?a=6d94f3"><link rel="stylesheet" type="text/css" href="style.css?a=6d94f3"><link rel="stylesheet" type="text/css" href="css/a_base.css?a=6d94f3"><script async src="js/a_base.js?a=6d94f3"></script></head><body><header class="header"><div class="header-wrap"><button class="header-menu-mob"><img src="icons/menu.svg"></button><div class="header-logo"></div><div class="header-right"><nav class="header-nav"><a href="#contact" class="header-item typography-header-item">Контакты</a></nav><div class="header-sign-up">Записаться</div></div></div></header><main class="a_base-main"><div class="order-form"><h2 class="order-form-title typography-mod-title-long-text">Записаться на пробный урок</h2><div class="order-form-schedule"><h3 class="order-form-schedule-title">Ближайшие занятия</h3><div class="date">23 Апреля 2019г</div><div class="date">14 Мая 2019г</div></div><form class="order-form-form"><label class="order-form-label"><input name="name" class="order-form-input"> <span class="order-form-text">Как Вас зовут ?</span></label> <label class="order-form-label"><input name="contact" class="order-form-input"> <span class="order-form-text">Ваш email или телефон для связи</span></label> <label class="order-form-label"><textarea name="contact" class="order-form-input order-form-input-text"></textarea> <span class="order-form-text">Сообщение для школы</span></label><div class="order-form-send-wrap"><button class="order-form-send">Отправить</button></div></form></div><div class="mod-contact" id="contact"><h2 class="typography-mod-title mod-contact-title">Контакты</h2></div></main><footer class=""><span class="typography-footer">Артём Авадьяев</span><div class="footer-icons-social"><img src="icons/social/footer_facebook.png" class="footer-icon-social"> <img src="icons/social/footer_instagram.png" class="footer-icon-social"></div><span class="typography-footer">© 2019</span></footer></body></html>
