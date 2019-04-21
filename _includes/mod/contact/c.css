@@ -1,11 +1,9 @@
 
 .mod-contact {
-  height: 100vh;
-  max-height: 1000px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
-  justify-content: space-between;
 
   margin-top: var(--indent-xxl);
 
