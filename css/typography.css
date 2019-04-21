@@ -16,10 +16,14 @@
 }
 
 .typography-mod-title {
-  color: white;
+  color: #A10B06;
   font-size: var(--font-size-mod-title);
 }
 
+.typography-mod-title-long-text {
+  color: #A10B06;
+  font-size: calc(var(--font-size-mod-title) * 0.7);
+}
 
 
 .typography-menu-item {

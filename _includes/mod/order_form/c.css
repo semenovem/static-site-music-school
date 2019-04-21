@@ -1,0 +1,103 @@
+
+.order-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--indent-xxl);
+}
+
+.order-form-title {
+  text-align: center;
+  margin-bottom: var(--indent-xl);
+}
+
+.order-form-schedule {
+  text-align: left;
+}
+
+.order-form-schedule-title {
+  margin-bottom: var(--indent-s);
+}
+
+
+
+.order-form-form {
+  margin-top: var(--indent-xl);
+  margin-bottom: var(--indent-s);
+  text-align: left;
+}
+
+.order-form-label:not(:first-child) {
+  margin-top: var(--indent-m);
+}
+
+
+.order-form-label {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.order-form-text {
+  margin-left: var(--indent-m);
+}
+
+.order-form-input {
+  border: 2px solid gainsboro;
+  border-radius: 7px;
+
+  font: inherit;
+  color: inherit;
+  font-weight: bold;
+
+  padding: var(--indent-s) var(--indent-m);
+  width: 300px;
+}
+
+.order-form-input-text {
+  height: 200px;
+}
+
+
+.order-form-send-wrap {
+  width: 100%;
+  text-align: center;
+  margin-top: var(--indent-xl);
+}
+
+.order-form-send {
+  margin: auto;
+  background-color: #5bc6bb;
+  border-radius: 7px;
+  border: none;
+  padding: var(--indent-s) var(--indent-m);
+  color: #fff;
+  font-weight: bold;
+}
+
+
+
+/* sm */
+@media (min-width: 576px) {}
+
+
+/* md */
+@media (min-width: 768px) {
+  .order-form-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+
+
+/* lg */
+@media (min-width: 992px) {}
+
+
+
+/* xl */
+@media (min-width: 1200px) {}
+
+

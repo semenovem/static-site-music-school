@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+@import url('https://fonts.googleapis.com/css?family=Gabriela');
+
 :root {
 
   /* beg common */
@@ -7,7 +10,8 @@
   --lg-max: 1199;
   --xl-min: 1200;
 
-  --font-family-first: sans-serif;
+  --font-family-first: 'Gabriela', serif;
+  --font-family-handwrite: 'Caveat', cursive;
   /* end common */
 
 
@@ -26,6 +30,7 @@
 
 
   --max-width-limit: 1300px;
+  --min-width-limit: 400px;
 
 
   --font-size-base: 20px;

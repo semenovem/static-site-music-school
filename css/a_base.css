@@ -13,7 +13,7 @@ body {
   position: relative;
 
   background-color: var(--bg-body);
-  min-width: 300px;
+  min-width: var(--min-width-limit);
 }
 
 h1, h2, h3, h4 {

@@ -5,16 +5,16 @@ url: "https://azbukatriathlona.com"
 # контакты
 contacts:
   phone:
-  email: GoldovskiTA@gmail.com
+  email:
   social:
     instagram:
-      url: https://www.instagram.com/triatlon_goldnik
+      url: https://www.instagram.com/artem_avadyaev
       alt: Мой instagram
-    youtube:
-      url: https://www.youtube.com/channel/UCUXyZhKmxe-21xOnhqbWFjg
-      alt: Мой канал на youtube
+#    youtube:
+#      url:
+#      alt: Мой канал на youtube
 
-github: https://github.com/semenovem/triathlon
+github: https://github.com/semenovem/static-site-music-school
 
 # Build settings
 markdown: kramdown

@@ -1,4 +1,16 @@
 .header-item {
+  font-family: var(--font-family-handwrite);
+  font-size: 30px;
+
   padding-left: 10px;
   padding-right: 10px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+
+  text-decoration: none;
+}
+
+.header-item:hover {
+  text-decoration: underline;
 }

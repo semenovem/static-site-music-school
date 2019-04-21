@@ -21,18 +21,13 @@ footer {
 .footer-icons-social {
   display: flex;
   align-items: center;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin: var(--indent-m) 5vw;
 }
 
 .footer-icon-social:not(:first-child) {
   margin-left: var(--indent-s);
 }
 
-
-.footer-icon-buy {
-  width: 23vw
-}
 
 .footer-icon-social {
   width: 8vw
