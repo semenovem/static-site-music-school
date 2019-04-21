@@ -7,13 +7,15 @@
 
   margin-top: var(--indent-xxl);
 
-
   padding-top: var(--indent-xxl);
-  padding-bottom: var(--indent-xl);
 }
 
 .mod-contact-title {
   text-align: center;
+}
+
+.mod-contact-map {
+  width: 100%;
 }
 
 
