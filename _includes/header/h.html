@@ -11,19 +11,21 @@
       <img src="{{ 'icons/menu.svg' | makeUrl }}">
     </button>
 
-    <div class="header-logo"></div>
+    <a class="header-logo" href="/"></a>
 
 
     <div class="header-right">
+      <div class="header-sign-up">
+        Записаться
+      </div>
+
       <nav class="header-nav">
 <!--        {% include header/item/h.html it=site.data.anchors.MAIN %}-->
 <!--        {% include header/item/h.html it=site.data.anchors.TEACHERS %}-->
         {% include header/item/h.html it=site.data.anchors.CONTACT %}
       </nav>
 
-      <div class="header-sign-up">
-        Записаться
-      </div>
+      <a class="header-phone" href="tel:{{ site.contacts.phone }}">{{ site.contacts.phone }}</a>
     </div>
 
   </div>

@@ -1,8 +1,13 @@
 {% include header/item/c.css %}
 
 .header {
-  height: 80px;
-  background-color: #5bc6bb;
+  height: var(--el-header-h);
+  background-color: #f7f7f7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 20px 20px #fff;
 }
 
 .header-wrap {
@@ -31,7 +36,13 @@
 .header-logo {
   padding-left: var(--indent-l);
   padding-right: var(--indent-l);
-}
+  background-image: url("{{ '../imgs/logos/logo.png' | makeUrl }}");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100px;
+  margin-left: var(--indent-m);}
 
 .header-nav {
   display: none;
@@ -39,32 +50,49 @@
 
 
 .header-sign-up {
-  font-family: var(--font-family-handwrite);
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  padding-left: var(--indent-l);
-  padding-right: var(--indent-l);
+  display: none;
+}
+
+
+.header-phone {
+  text-decoration: none;
+  margin-left: var(--indent-m);
+  margin-right: var(--indent-m);
+  font-size: 14px;
+}
+
+.header-phone:hover {
+  text-decoration: underline;
 }
 
 
 
 /* sm */
 @media (min-width: 576px) {
-  .header-nav {
-    display: flex;
-  }
-
   .header-menu-mob {
     display: none;
+  }
+
+  .header-phone {
+    font-size: 20px;
   }
 }
 
 
-
 /* md */
 @media (min-width: 768px) {
+  .header-nav {
+    display: flex;
+  }
 
+  .header-sign-up {
+    display: block;
+    font-family: var(--font-family-handwrite);
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: var(--indent-l);
+    padding-right: var(--indent-l);
+  }
 }
 
 

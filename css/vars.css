@@ -42,7 +42,7 @@
   --font-size-h4: calc(var(--font-size-responsive) * 1.2);
 
   /* for elements */
-  --el-header-h: 50px;
+  --el-header-h: 80px;
 
   --el-slider-promo-h: 45vw;
   --el-slider-promo-min-h: 200px;
@@ -71,7 +71,8 @@
 
 
   /* prev old @deprecated */
-  --font-color-primary: #485F6E;
+  --font-color-primary: #222e35;
+  /*--font-color-primary: #485F6E;*/
   --font-color-secondary: #39c360;
 
   --font-color-link-ext: #7396ad;
@@ -115,7 +116,7 @@
     --font-size-music-btn-action: 30px;
 
     --font-size-responsive: 2vw;
-    --el-header-h: 86px;
+    --el-header-h: 80px;
   }
 }
 

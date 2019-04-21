@@ -33,7 +33,18 @@ button {
   color: inherit;
 }
 
-.a_base-main {}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.a_base-main {
+  padding-top: var(--el-header-h);
+}
 
 
 .a_base-main-awesome {
